@@ -7,6 +7,8 @@ import (
 	"time"
 )
 
+// run command:
+// go run work1-3.go hello world
 func main() {
 	startTime := time.Now()
 	dumpPrint()

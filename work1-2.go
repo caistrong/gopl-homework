@@ -6,6 +6,8 @@ import (
 	"strconv"
 )
 
+// run command:
+// go run work1-2.go hello world
 func main() {
 	var s string
 	for idx, arg := range os.Args[1:] {
