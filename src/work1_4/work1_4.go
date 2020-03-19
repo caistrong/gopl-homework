@@ -12,7 +12,7 @@ type countKey struct {
 }
 
 // run command:
-// go run work1-4.go work1-4.txt
+// go run work1_4.go test.txt
 func main() {
 	counts := make(map[countKey]int)
 	files := os.Args[1:]

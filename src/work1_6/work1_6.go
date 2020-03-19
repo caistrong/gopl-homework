@@ -20,7 +20,7 @@ const (
 )
 
 // run command:
-// go run work1-6.go > work1-6.gif
+// go run work1_6.go > out.gif
 func main() {
 	colorfulLissajous(os.Stdout)
 }
