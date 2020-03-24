@@ -18,6 +18,8 @@ var sin30, cos30 = math.Sin(angle), math.Cos(angle)
 
 // go command:
 // go run ./src/chapter3/work3_4/work3_4.go
+// open browser
+// http://localhost:8888/?width=2160&height=1280&color=red
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		width := r.FormValue("width")
