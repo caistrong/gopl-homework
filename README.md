@@ -63,3 +63,7 @@ PopCount函数)。[-> code](https://github.com/caistrong/gopl-homework/blob/mast
    - 7.修改reverse函数用于原地反转UTF-8编码的[]byte。是否可以不用分配额外的内存？。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_7/work4_7.go)
    - 8.修改charcount程序，使用unicode.IsLetter等相关的函数，统计字母、数字等Unicode中不同的字符类别。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_8/work4_8.go)
    - 9.编写一个程序wordfreq程序，报告输入文本中每个单词出现的频率。在第一次调用Scan前先调用input.Split(bufio.ScanWords)函数，这样可以按单词而不是按行输入。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_9/work4_9.go)
+   - 10.修改issues程序，根据问题的时间进行分类，比如不到一个月的、不到一年的、超过一年。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_10/work4_10.go)
+   - 11.编写一个工具，允许用户在命令行创建、读取、更新和关闭GitHub上的issue，当必要的时候自动打开用户默认的编辑器用于输入文本信息。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_11/work4_11.go)
+   - 12.流行的web漫画服务xkcd也提供了JSON接口。例如，一个 https://xkcd.com/571/info.0.json 请求将返回一个很多人喜爱的571编号的详细描述。下载每 个链接(只下载一次)然后创建一个离线索引。编写一个xkcd工具，使用这些离线索引，打 印和命令行输入的检索词相匹配的漫画的URL。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_12/work4_12.go)
+   - 13.使用开放电影数据库的JSON服务接口，允许你检索和下载 https://omdbapi.com/ 上电影的名字和对应的海报图像。编写一个poster工具，通过命令行输入的电影名字，下载对应的海报。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_13/work4_13.go)
