@@ -8,7 +8,7 @@ import (
 )
 
 // run command:
-// go run work1_7.go http://info.cern.ch/hypertext/WWW/TheProject.html
+// go run ./src/chapter1/work1_7/work1_7.go http://info.cern.ch/hypertext/WWW/TheProject.html
 func main() {
 	for _, url := range os.Args[1:] {
 		resp, err := http.Get(url)

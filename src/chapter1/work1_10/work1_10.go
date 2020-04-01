@@ -10,7 +10,7 @@ import (
 )
 
 // run command:
-// go run work1_10.go http://qq.com http://qq.com http://qq.com http://qq.com http://qq.com http://qq.com
+// go run ./src/chapter1/work1_10/work1_10.go http://qq.com http://qq.com http://qq.com http://qq.com http://qq.com http://qq.com
 func main() {
 	startTime := time.Now()
 	ch := make(chan string)

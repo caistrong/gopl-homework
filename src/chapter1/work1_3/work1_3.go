@@ -8,7 +8,7 @@ import (
 )
 
 // run command:
-// go run work1_3.go hello world
+// go run ./src/chapter1/work1_3/work1_3.go hello world
 func main() {
 	startTime := time.Now()
 	dumpPrint()

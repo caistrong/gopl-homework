@@ -18,7 +18,7 @@ const (
 )
 
 // run command:
-// go run work1_5.go > out.gif
+// go run ./src/chapter1/work1_5/work1_5.go > ./src/chapter1/work1_5/out.gif
 func main() {
 	lissajous(os.Stdout)
 }

@@ -7,7 +7,7 @@ import (
 )
 
 // run command:
-// go run work1_1.go hello world
+// go run ./src/chapter1/work1_1/work1_1.go hello world
 func main() {
 	fmt.Println(strings.Join(os.Args, " "))
 }

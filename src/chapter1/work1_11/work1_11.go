@@ -21,11 +21,11 @@ import (
 // it cause that we push data to `ch` less 500 times
 
 // run command:
-// go run work1_11.go
+// go run ./src/chapter1/work1_11/work1_11.go
 func main() {
 	startTime := time.Now()
 	ch := make(chan string)
-	websiteList := readCsvFile("./top500Domains.csv")
+	websiteList := readCsvFile("./src/chapter1/work1_11/top500Domains.csv")
 	for _, url := range websiteList {
 		go fetch(url, ch)
 	}

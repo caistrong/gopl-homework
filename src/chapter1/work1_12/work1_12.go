@@ -20,7 +20,7 @@ const (
 )
 
 // run command:
-// go run work1_12.go
+// go run ./src/chapter1/work1_12/work1_12.go
 
 // browser open http://localhost:8888/?cycles=10.0
 func main() {

@@ -9,7 +9,7 @@ import (
 )
 
 // run command:
-// go run work1_8.go info.cern.ch/hypertext/WWW/TheProject.html
+// go run ./src/chapter1/work1_8/work1_8.go http://info.cern.ch/hypertext/WWW/TheProject.html
 func main() {
 	for _, url := range os.Args[1:] {
 		if !strings.HasPrefix(url, "http://") {
