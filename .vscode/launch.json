@@ -11,7 +11,10 @@
             "mode": "auto",
             "program": "${fileDirname}",
             "env": {},
-            "args": []
+            "args": [
+                "https://golang.org/",
+                "nav"
+            ]
         }
     ]
 }
