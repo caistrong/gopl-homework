@@ -67,3 +67,22 @@ PopCount函数)。[-> code](https://github.com/caistrong/gopl-homework/blob/mast
    - 11.编写一个工具，允许用户在命令行创建、读取、更新和关闭GitHub上的issue，当必要的时候自动打开用户默认的编辑器用于输入文本信息。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_11/work4_11.go)
    - 12.流行的web漫画服务xkcd也提供了JSON接口。例如，一个 https://xkcd.com/571/info.0.json 请求将返回一个很多人喜爱的571编号的详细描述。下载每 个链接(只下载一次)然后创建一个离线索引。编写一个xkcd工具，使用这些离线索引，打 印和命令行输入的检索词相匹配的漫画的URL。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_12/work4_12.go)
    - 13.使用开放电影数据库的JSON服务接口，允许你检索和下载 https://omdbapi.com/ 上电影的名字和对应的海报图像。编写一个poster工具，通过命令行输入的电影名字，下载对应的海报。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_13/work4_13.go)
+   - 14.创建一个web服务器，查询一次GitHub，然后生成BUG报告、里程碑和对应的用 户信息。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter4/work4_14/work4_14.go)
+- 5.函数
+   - 1.修改findlinks代码中遍历n.FirstChild链表的部分，将循环调用visit，改成递归调用。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_1/work5_1.go)
+   - 2.编写函数，记录在HTML树中出现的同名元素的次数。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_2/work5_2.go)
+   - 3.编写函数输出所有text结点的内容。注意不要访问`<script>`和`<style>`元素,因为
+这些元素对浏览者是不可见的。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_3/work5_3.go)
+   - 4.扩展vist函数，使其能够处理其他类型的结点，如images、scripts和style sheets。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_4/work5_4.go)
+   - 5.实现countWordsAndImages。(参考练习4.9如何分词)[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_5/work5_5.go)
+   - 6.修改gopl.io/ch3/surface (§3.2) 中的corner函数，将返回值命名，并使用bare
+return。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_6/work5_6.go)
+   - 7.完善startElement和endElement函数，使其成为通用的HTML输出器。要求:输出 注释结点，文本结点以及每个元素的属性(< a href='...'>)。使用简略格式输出没有孩子结点 的元素(即用 `<img/>` 代替 `<img></img>` )。编写测试，验证程序输出的格式正确。(详见11 章)[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_7/work5_7.go)
+   - 8.修改pre和post函数，使其返回布尔类型的返回值。返回false时，中止 forEachNoded的遍历。使用修改后的代码编写ElementByID函数，根据用户输入的id查找第 一个拥有该id元素的HTML元素，查找成功后，停止遍历。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_8/work5_8.go)
+   - 9.编写函数expand，将s中的"foo"替换为f("foo")的返回值。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_9/work5_9.go)
+   - 10.重写topoSort函数，用map代替切片并移除对key的排序代码。验证结果的正确性 (结果不唯一)。
+[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_10/work5_10.go)
+   - 11.现在线性代数的老师把微积分设为了前置课程。完善topSort，使其能检测有向图 中的环。[-> code](https://github.com/caistrong/gopl-homework/blob/master/src/chapter5/work5_11/work5_11.go)
+   - 12.gopl.io/ch5/outline2(5.5节)的startElement和endElement共用了全局变量 depth，将它们修改为匿名函数，使其共享outline中的局部变量。
+   - 13.修改crawl，使其能保存发现的页面，必要时，可以创建目录来保存这些页面。只 保存来自原始域名下的页面。假设初始页面在golang.org下，就不要保存vimeo.com下的页 面。
+   - 14.使用breadthFirst遍历其他数据结构。比如，topoSort例子中的课程依赖关系(有向图),个人计算机的文件层次结构(树)，你所在城市的公交或地铁线路(无向图)。
